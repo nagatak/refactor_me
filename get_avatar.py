@@ -14,7 +14,8 @@ if RESULT.ok :
     user_info = json.loads(RESULT.content)
     avatarURL = user_info['avatar_url']
 else:
-    sys.stderr.write( "Error fetching user information for {0}; exiting now, sorry...\n".format(ARGS.username) )
+    sys.stderr.write( "Error fetching user information for {0};"
+                      "exiting now, sorry...\n".format(ARGS.username) )
     sys.exit()
 # DOWNLOAD AND SAVE IMAGE FILE
 I = requests.get(avatarURL , stream=True)
