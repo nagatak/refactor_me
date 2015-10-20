@@ -3,9 +3,9 @@
 import sys, json
 # PARSE COMMAND LINE ARGUMENTS
 import argparse
-PARSER = argparse.ArgumentParser()
-PARSER.add_argument(  'username')
-ARGS = PARSER.parse_args()
+parser = argparse.ArgumentParser()
+parser.add_argument(  'username')
+ARGS = parser.parse_args()
 # CALL THE GITHUB API AND GET USER INFO
 RequestUrl = 'https://api.github.com/users/' + ARGS.username
 import requests
