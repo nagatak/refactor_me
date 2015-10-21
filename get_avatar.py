@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-# COMMAND LINE PROGRAM TO DOWNLOAD A USER'S AVATAR FROM GITHUB. USAGE: `PYTHON get_avatar.py <GITHUB_USERNAME>`. 
+# Command line program to download a user's avatar from github. 
+# Usage: `python get_avatar.py <github_username>`. 
 import sys, json
 # PARSE COMMAND LINE ARGUMENTS
 import argparse
